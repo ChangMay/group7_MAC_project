@@ -1,5 +1,7 @@
 # 簡介
 我們的專題題目是文字辨識與校正，將單行文字的圖片檔(.jpg)經過辨識模型與校正錯字後輸出成文字檔(.txt)
+
+
 # 架構圖
 ![](https://i.imgur.com/8Jbt22j.png)
 
@@ -19,12 +21,12 @@
 | trdg           | 1.7.0    |
 
 # train
-* 我們用的訓練資料在 ```dataset/training_data```。
+* 我們用的字典檔與訓練資料在[這裡](https://drive.google.com/drive/u/2/folders/1FYOx9GVTmVoIpixb4hvfTY4WBXX_DMA_) ```dataset/training_data```。
 * 我們用 [deep-text-recognition-benchmark](https://github.com/clovaai/deep-text-recognition-benchmark) 訓練 CRNN 模型。
 * 訓練好模型放在 ```model```。
 
 # test
-* 資料放在 ```dataset/testing_data```。
+* 字典檔與測試資料放在[這裡](https://drive.google.com/drive/u/2/folders/1FYOx9GVTmVoIpixb4hvfTY4WBXX_DMA_) ```dataset/testing_data```。
 * 因為不用 detector，所以須修改以下 code：
     1. 將 readtext 的參數新增 ```detector=True```：
     ```python
